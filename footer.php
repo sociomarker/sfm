@@ -11,7 +11,6 @@
 
 ?>
 
-	</div><!-- #content -->
 
 	<footer id="footer">
 				<div class="footer-copyright">
@@ -31,6 +30,8 @@
 					</div>
 				</div>
 			</footer>
+
+	</div><!-- #content -->
 
 <?php //wp_footer(); ?>
 

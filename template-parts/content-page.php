@@ -9,23 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<section class="page-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-						</div>
-					</div>
-				</div>
-	</section>
-
 	<?php sfm_post_thumbnail(); ?>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-9">
 	
 		<?php
 			the_content();
@@ -35,10 +20,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-			</div>
-		</div>
-	</div>
-
+		
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
@@ -61,4 +43,3 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->

@@ -16,7 +16,28 @@
 get_header(); 
 
 ?>
-	<div role="main" class="main">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<div role="main" class="main">
+			<div class="container">
+			<div class="row">
+
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<section class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+						</div>
+					</div>
+				</div>
+	</section>
+
+
+			<div class="col-md-9">
+
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -28,8 +49,17 @@ get_header();
 				endif;
 
 			endwhile; // End of the loop.
-			?>		
-	</div>		
+			?>
+			</div>				
+			<div class="col-md-3">
+			<?php 
+				get_sidebar();
+			?>
+			</div>
+			</article><!-- #post-<?php the_ID(); ?> -->	
+			</div>
+			</div>			
+			</div>			
+		</main><!-- #main -->
 <?php
-get_sidebar();
 get_footer();
