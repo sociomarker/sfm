@@ -544,10 +544,8 @@ Version: 		3.7.0
 	border: 1px solid #CCC;
 	box-shadow: none;
 	float: left;
-	height: 35px;
-	padding: 0 39px;
 	text-align: center;
-	width: 125px;
+	width: 65px;
 	font-size: 1em;
 }
 
@@ -592,7 +590,7 @@ Version: 		3.7.0
 }
 
 .shop table.cart td {
-	border-top: 1px solid #DCDCDC;
+	border-top: 1px solid #006699;
 	padding: 8px 10px;
 }
 
@@ -617,11 +615,11 @@ Version: 		3.7.0
 }
 
 .shop table.cart .product-name {
-	width: 60%;
+	width: 30%;
 }
 
 .shop table.cart .quantity {
-	top: 10px;
+	top: 0px;
 	position: relative;
 }
 

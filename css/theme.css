@@ -3078,3 +3078,9 @@ html.boxed body.sticky-menu-active #header {
 		background: none !important;
 	}
 }
+
+
+.cart_totals h2{
+	font-size: 1.8em !important;
+	color: #006699 !important;
+}
